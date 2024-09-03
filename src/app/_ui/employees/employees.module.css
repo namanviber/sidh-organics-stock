@@ -1,0 +1,35 @@
+.container {
+    padding: 20px;
+  }
+  
+  .actionTabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tab {
+    padding: 10px;
+    max-width: fit-content;
+    background: var(--col2);
+    color: var(--bg);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 10px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .tab.active {
+    background-color: var(--col4);
+    color: var(--bg);
+  }
+  

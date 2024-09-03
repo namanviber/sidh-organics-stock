@@ -1,0 +1,130 @@
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.printArea input {
+    outline: none;
+}
+
+.header h2 {
+  font-weight: bold;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.printButton {
+  color: var(--text);
+  background-color: var(--bgsoft);
+  cursor: pointer;
+}
+
+.printArea {
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sheet {
+  width: 794px;
+  /* height: 1123px; */
+  padding: 50px;
+  background-color: var(--text);
+  color: var(--bg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title,
+.subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 2px solid var(--bgsoft);
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.infoItem {
+  border: 2px solid var(--textsoft);
+  padding: 5px;
+}
+
+.materialTable,
+.checkTable,
+.testReportTable,
+.horizontalTable {
+  width: 100%;
+}
+
+.materialTable th,
+.materialTable td,
+.checkTable th,
+.checkTable td,
+.testReportTable th,
+.testReportTable td,
+.horizontalTable th,
+.horizontalTable td {
+  border: 2px solid var(--textsoft);
+  padding: 5px;
+  text-align: center;
+}
+
+.addButton {
+  width: 100%;
+  padding: 0;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 2px solid #ccc;
+}
+
+.totalRow span {
+  margin-left: 10px;
+}
+
+@media print {
+  .printButton {
+    display: none;
+  }
+
+  .printArea {
+    box-shadow: none;
+  }
+
+  .sheet {
+    box-shadow: none;
+    height: auto;
+  }
+
+  .sheet:first-child {
+    page-break-after: always;
+  }
+}

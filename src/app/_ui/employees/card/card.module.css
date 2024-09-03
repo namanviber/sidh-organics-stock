@@ -1,0 +1,102 @@
+.card {
+  background-color: var(--bgsoft);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-right: 15px;
+}
+
+.col1 { background-color: var(--col1); }
+.col2 { background-color: var(--col2); }
+.col3 { background-color: var(--col3); }
+.col4 { background-color: var(--col4); }
+
+.headerInfo {
+  flex-grow: 1;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.email {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.active {
+  background-color: rgba(46, 204, 113, 0.2);
+  color: var(--col4);
+}
+
+.details {
+  margin-bottom: 15px;
+}
+
+.details p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.changePermission {
+  background-color: rgba(136, 158, 54, 0.2);
+  color: var(--col2);
+}
+
+.update {
+  background-color: rgba(54, 158, 59, 0.2);
+  color: var(--col4);
+}
+
+.delete {
+  background-color: rgba(200, 63, 111, 0.2);
+  color: var(--col1);
+}
+
+.actions button:hover {
+  opacity: 0.8;
+}

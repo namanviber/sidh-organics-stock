@@ -1,0 +1,71 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../public/bg.jpg");
+}
+
+.box {
+  padding: 30px;
+  color: var(--text);
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.companyName {
+  color: var(--text);
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.email input {
+  border-radius: 5px;
+  outline: none;
+  height: 35px;
+  color: var(--bg);
+  padding: 10px;
+  width: fit-content;
+}
+
+.password input {
+  border-radius: 5px;
+  outline: none;
+  height: 35px;
+  color: var(--bg);
+  padding: 10px;
+}
+
+.login {
+  background-color: var(--col2);
+  color: var(--bg);
+  font-weight: bold;
+  width: 50%;
+}
+
+.login:hover {
+  background-color: var(--col2);
+}

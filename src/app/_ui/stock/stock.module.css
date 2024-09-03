@@ -1,0 +1,117 @@
+.container {
+  padding: 20px;
+}
+
+.actionTabs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab {
+  padding: 10px;
+  max-width: fit-content;
+  background: var(--col2);
+  color: var(--bg);
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+.tab.active {
+  background-color: var(--col4);
+  color: var(--bg);
+}
+
+.dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--bgsoft);
+  color: var(--text);
+}
+
+.dialogContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  color: var(--text);
+}
+
+.operationButtons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.qty {
+  margin-bottom: 20px;
+}
+
+.operationButtons button {
+  flex: 1;
+  background-color: var(--bgsoft);
+  border: none;
+  color: var(--text);
+}
+
+.operationButtons button:hover {
+  background-color: none;
+  border: none;
+}
+
+.operationButtons .MuiTextField-root {
+  flex: 1;
+}
+
+.dialogContent :global(.MuiDialog-paper) {
+  background-color: var(--bgsoft);
+}
+
+.dialogContent :global(.MuiDialogTitle-root) {
+  color: var(--text);
+}
+
+.dialogContent :global(.MuiInputBase-root) {
+  color: var(--text);
+}
+
+.dialogContent :global(.MuiInputLabel-root) {
+  color: var(--text);
+}
+
+.dialogContent :global(.MuiOutlinedInput-notchedOutline) {
+  border-color: var(--text);
+}
+
+.dialogContent :global(.MuiSelect-icon) {
+  color: var(--text);
+}
+
+.dialogContent :global(.MuiMenuItem-root) {
+  color: var(--text);
+}
+
+.dialogContent :global(.MuiButton-contained) {
+  background-color: var(--col1);
+  color: var(--text);
+}
+
+.dialogContent :global(.MuiButton-contained:hover) {
+  background-color: none;
+}

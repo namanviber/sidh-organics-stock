@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appBar {
+  background-color: var(--bg);
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.companyName {
+  color: var(--text);
+  font-weight: bold;
+}
+
+.middleSection {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--textsoft);
+  color: var(--text);
+  cursor: pointer;
+  background-color: var(--bg);
+}
+
+.menuButton:hover {
+  background-color: var(--textsoft);
+  color: var(--bg);
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.menuText {
+  color: var(--text);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: var(--col1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin-right: 15px;
+}
+
+.menuIconButton {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 1024px) {
+  .middleSection {
+    display: none;
+  }
+  
+  .menuIconButton {
+    display: flex;
+  }
+  
+  .leftSection {
+    flex-grow: 1;
+  }
+
+  .rightSection {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+}

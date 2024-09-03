@@ -1,0 +1,197 @@
+/* components/Table.module.css */
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: var(--bgsoft);
+  color: var(--text);
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+
+.table th:first-child,
+.table td:first-child {
+  border-right: 1px solid var(--border);
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.table tbody tr:hover {
+  background-color: var(--hover);
+}
+
+.table tbody tr.selected {
+  background-color: var(--bgsoft);
+}
+
+.table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.table th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.table tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+.table tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.totalRecords {
+  color: var(--text);
+}
+
+.pageButtons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.pageButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  border: none;
+  background-color: var(--bgsoft);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pageButton:hover:not(:disabled) {
+  background-color: var(--col2);
+  color: white;
+}
+
+.pageButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pageButton.active {
+  background-color: var(--col2);
+  color: white;
+}
+
+.pageButton svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ellipsis {
+  margin: 0 4px;
+  color: var(--text);
+}
+
+.iconButton {
+  color: var(--textsoft);
+}
+
+.iconButton:hover {
+  color: var(--text);
+}
+
+.filterSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: var(--bgsoft);
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.searchBar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  margin-right: 8px;
+  width: 100%;
+}
+
+.filterTab {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filterButton,
+.sortButton {
+  padding: 8px 12px !important;
+  background-color: var(--bgsoft) !important;
+  border-radius: 4px !important;
+  color: var(--text) !important;
+}
+
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    padding: 8px;
+  }
+
+  .filterSection {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchBar {
+    max-width: none;
+  }
+
+  .filterTab {
+    justify-content: space-between;
+  }
+
+  .pagination {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
